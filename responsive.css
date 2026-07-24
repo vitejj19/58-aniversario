@@ -1,0 +1,2033 @@
+/* ==========================================
+   DISEÑO RESPONSIVO
+   58 AÑOS DE AMOR
+========================================== */
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .hero-background{
+        background-position:35% center;
+    }
+
+    .hero-content{
+        width:min(92%,760px);
+    }
+
+    .hero-content h1{
+        font-size:4.4rem;
+    }
+
+    .hero-text{
+        font-size:1.3rem;
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES
+========================================== */
+
+@media (max-width:600px){
+
+    #hero{
+        min-height:100vh;
+        min-height:100svh;
+    }
+
+    /* Posición del fondo floral */
+
+    .hero-background{
+        background-position:31% center;
+    }
+
+    /* Marco dorado exterior */
+
+    #hero::before{
+        inset:9px;
+    }
+
+    /* Marco dorado interior */
+
+    #hero::after{
+        inset:15px;
+    }
+
+    /* Overlay más intenso para mejorar lectura */
+
+    .overlay{
+        background:
+            linear-gradient(
+                rgba(252,250,247,.62),
+                rgba(252,250,247,.72)
+            );
+    }
+
+    /* Contenido principal */
+
+    .hero-content{
+        width:100%;
+
+        padding:
+            calc(30px + env(safe-area-inset-top))
+            28px
+            105px;
+    }
+
+    /* Monograma */
+
+    .monogram{
+        width:70px;
+        height:70px;
+        margin-bottom:12px;
+    }
+
+    .monogram-letter{
+        font-size:1.4rem !important;
+    }
+
+    .monogram-ampersand{
+        font-size:1.2rem !important;
+    }
+
+    /* 58 años de amor */
+
+    .hero-years{
+        margin-bottom:12px;
+
+        font-size:1.15rem;
+        letter-spacing:3px;
+    }
+
+    /* Nombres */
+
+    .hero-content h1{
+        font-size:3.4rem;
+        line-height:1.05;
+    }
+
+    .hero-content h1 > span{
+        margin:5px 0;
+
+        font-size:1.6rem;
+    }
+
+    /* Mensaje */
+
+    .hero-text{
+        margin:24px auto;
+
+        font-size:1.12rem;
+        line-height:1.55;
+    }
+
+    /* Fecha y botón */
+
+    .hero-actions{
+        gap:18px;
+    }
+
+    .hero-date{
+        max-width:290px;
+
+        font-size:1.05rem;
+        line-height:1.35;
+    }
+
+    .hero-date i{
+        font-size:1.1rem;
+    }
+
+    .btn-primary{
+        width:min(100%,280px);
+
+        padding:15px 28px;
+
+        font-size:1.05rem;
+    }
+
+    /* Indicador inferior */
+
+    .scroll-down{
+        bottom:24px;
+
+        font-size:.9rem;
+    }
+
+    .scroll-down span{
+        font-size:.82rem;
+    }
+
+    .scroll-down i{
+        font-size:20px;
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:380px){
+
+    .hero-content{
+        padding-left:22px;
+        padding-right:22px;
+    }
+
+    .hero-content h1{
+        font-size:2.95rem;
+    }
+
+    .hero-text{
+        font-size:1rem;
+    }
+
+    .hero-date{
+        max-width:260px;
+
+        font-size:.98rem;
+    }
+
+    .monogram{
+        width:64px;
+        height:64px;
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES CON POCA ALTURA
+========================================== */
+
+@media (max-height:740px) and (max-width:600px){
+
+    .hero-content{
+        padding-top:20px;
+        padding-bottom:82px;
+    }
+
+    .monogram{
+        width:58px;
+        height:58px;
+        margin-bottom:7px;
+    }
+
+    .monogram-letter{
+        font-size:1.2rem !important;
+    }
+
+    .monogram-ampersand{
+        font-size:1rem !important;
+    }
+
+    .hero-years{
+        margin-bottom:7px;
+
+        font-size:1rem;
+    }
+
+    .hero-content h1{
+        font-size:2.8rem;
+    }
+
+    .hero-content h1 > span{
+        font-size:1.35rem;
+    }
+
+    .hero-text{
+        margin:15px auto;
+
+        font-size:1rem;
+        line-height:1.4;
+    }
+
+    .hero-actions{
+        gap:14px;
+    }
+
+    .hero-date{
+        font-size:.95rem;
+    }
+
+    .btn-primary{
+        padding:13px 25px;
+    }
+
+    .scroll-down{
+        bottom:18px;
+    }
+
+}
+
+/* ==========================================
+   CUENTA REGRESIVA — TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .countdown-section{
+        min-height:500px;
+        padding:70px 24px;
+        background-position:65% center;
+    }
+
+    .countdown-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:38px 30px;
+        max-width:520px;
+    }
+
+    .countdown-header h2{
+        font-size:2.9rem;
+    }
+
+    .countdown-number{
+        font-size:4rem;
+    }
+
+}
+
+
+/* ==========================================
+   CUENTA REGRESIVA — CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .countdown-section{
+        min-height:auto;
+        padding:65px 20px;
+
+        background-position:70% center;
+    }
+
+    .countdown-overlay{
+        background:
+            linear-gradient(
+                rgba(252,250,247,.84),
+                rgba(252,250,247,.78)
+            );
+    }
+
+    .countdown-header{
+        margin-bottom:38px;
+    }
+
+    .countdown-header h2{
+        font-size:2.65rem;
+    }
+
+    .countdown-header p{
+        font-size:1.3rem;
+    }
+
+    .countdown-grid{
+        grid-template-columns:repeat(2,minmax(110px,1fr));
+        gap:34px 18px;
+
+        max-width:360px;
+    }
+
+    .countdown-number{
+        font-size:3.6rem;
+    }
+
+    .countdown-label{
+        margin-top:6px;
+
+        font-size:.9rem;
+        letter-spacing:1.5px;
+    }
+
+    .countdown-quote{
+        max-width:340px;
+        margin:40px auto 0;
+
+        font-size:1.7rem;
+    }
+
+    .countdown-section::before{
+        top:14px;
+    }
+
+    .countdown-section::after{
+        bottom:14px;
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:360px){
+
+    .countdown-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px 12px;
+    }
+
+    .countdown-number{
+        font-size:3.15rem;
+    }
+
+    .countdown-label{
+        font-size:.8rem;
+    }
+
+    .countdown-quote{
+        font-size:1.5rem;
+    }
+
+}
+
+/* ==========================================
+   MENSAJE PRINCIPAL — TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .message-section{
+        min-height:600px;
+        padding:95px 24px;
+    }
+
+    .message-container{
+        width:min(92%,760px);
+        padding:60px 55px;
+    }
+
+    .message-title{
+        font-size:3.8rem;
+    }
+
+    .message-content{
+        font-size:1.3rem;
+    }
+
+}
+
+
+/* ==========================================
+   MENSAJE PRINCIPAL — CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .message-section{
+        min-height:auto;
+        padding:75px 18px;
+    }
+
+    .message-container{
+        width:100%;
+        padding:52px 25px;
+
+        background:rgba(255,255,255,.62);
+    }
+
+    .message-container::before{
+        inset:8px;
+    }
+
+    .message-section .section-ornament{
+        margin-bottom:18px;
+    }
+
+    .message-section .section-ornament span{
+        width:42px;
+    }
+
+    .message-eyebrow{
+        font-size:.82rem;
+        letter-spacing:2.3px;
+    }
+
+    .message-title{
+        margin-bottom:28px;
+
+        font-size:3rem;
+    }
+
+    .message-content{
+        font-size:1.12rem;
+        line-height:1.65;
+    }
+
+    .message-content p{
+        margin-bottom:20px;
+    }
+
+    .message-thanks{
+        font-size:1.95rem;
+    }
+
+    .message-signature{
+        margin-top:28px;
+
+        font-size:1.25rem;
+    }
+
+    .message-decoration{
+        width:220px;
+        height:220px;
+    }
+
+}
+
+
+/* ==========================================
+   MENSAJE PRINCIPAL — CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:360px){
+
+    .message-container{
+        padding:45px 20px;
+    }
+
+    .message-title{
+        font-size:2.65rem;
+    }
+
+    .message-content{
+        font-size:1.02rem;
+    }
+
+    .message-thanks{
+        font-size:1.75rem;
+    }
+
+}
+
+/* ==========================================
+   NUESTRA HISTORIA — TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .history-section{
+        padding:95px 22px;
+    }
+
+    .history-title{
+        font-size:4rem;
+    }
+
+    .history-introduction{
+        margin-bottom:60px;
+        font-size:1.2rem;
+    }
+
+    .timeline{
+        max-width:760px;
+    }
+
+    .timeline-item{
+        grid-template-columns:1fr 70px 1fr;
+    }
+
+    .timeline-card{
+        max-width:315px;
+        padding:32px 28px;
+    }
+
+    .timeline-card h3{
+        font-size:1.55rem;
+    }
+
+    .timeline-card p{
+        font-size:1rem;
+    }
+
+    .timeline-marker{
+        width:56px;
+        height:56px;
+    }
+
+    .timeline-item-left .timeline-card::after,
+    .timeline-item-right .timeline-card::after{
+        width:35px;
+    }
+
+    .timeline-item-left .timeline-card::after{
+        right:-35px;
+    }
+
+    .timeline-item-right .timeline-card::after{
+        left:-35px;
+    }
+
+}
+
+
+/* ==========================================
+   NUESTRA HISTORIA — CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .history-section{
+        padding:80px 18px;
+        text-align:center;
+    }
+
+    .history-section .section-ornament span{
+        width:42px;
+    }
+
+    .history-eyebrow{
+        font-size:.82rem;
+        letter-spacing:2.5px;
+    }
+
+    .history-title{
+        font-size:3.2rem;
+    }
+
+    .history-introduction{
+        margin:22px auto 50px;
+
+        font-size:1.08rem;
+        line-height:1.6;
+    }
+
+    .timeline{
+        width:100%;
+        padding-left:72px;
+    }
+
+    /* Línea a la izquierda */
+
+    .timeline::before{
+    top:0;
+    bottom:0;
+    left:26px;
+
+    transform:none;
+    }
+
+    .timeline-item{
+        display:block;
+
+        min-height:auto;
+        margin-bottom:42px;
+    }
+
+    .timeline-item{
+    position:relative;
+    display:block;
+
+    min-height:auto;
+    margin-bottom:42px;
+    }
+
+    /* Marcador izquierdo */
+
+    .timeline-marker{
+    position:absolute;
+    top:28px;
+    left:-72px;
+
+    width:54px;
+    height:54px;
+
+    font-size:1.1rem;
+    }
+
+    /* Tarjetas */
+
+    .timeline-item-left .timeline-card,
+    .timeline-item-right .timeline-card{
+        width:100%;
+        max-width:none;
+
+        padding:34px 25px;
+
+        text-align:left;
+    }
+
+    /* Conector */
+
+    .timeline-item-left .timeline-card::after,
+    .timeline-item-right .timeline-card::after{
+        top:56px;
+        right:auto;
+        left:-45px;
+
+        width:45px;
+    }
+
+    .timeline-photo-placeholder{
+        min-height:120px;
+    }
+
+    .timeline-photo img{
+    height:210px;
+    }
+
+    .timeline-photo-large img{
+    height:340px;
+    }
+
+    .image-modal{
+    padding:15px;
+    }
+
+    .image-modal-close{
+    top:12px;
+    right:12px;
+
+    width:44px;
+    height:44px;
+    }
+
+    .history-closing{
+        margin-top:55px;
+        font-size:2.15rem;
+    }
+
+    /* En celular las animaciones entran desde abajo */
+
+    .timeline-item-left.reveal,
+    .timeline-item-right.reveal{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    .timeline-item.reveal.is-visible{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* ==========================================
+   NUESTRA HISTORIA — CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:360px){
+
+    .history-section{
+        padding-right:14px;
+        padding-left:14px;
+    }
+
+    .history-title{
+        font-size:2.85rem;
+    }
+
+    .timeline{
+        padding-left:62px;
+    }
+
+    .timeline::before{
+    left:23px;
+    }
+
+    .timeline-marker{
+        left:-62px;
+
+        width:50px;
+        height:50px;
+    }
+
+    .timeline-item-left .timeline-card,
+    .timeline-item-right .timeline-card{
+        padding:31px 21px;
+    }
+    .timeline-item-left .timeline-card::after,
+    .timeline-item-right .timeline-card::after{
+    top:52px;
+    left:-37px;
+
+    width:37px;
+    }
+
+    .timeline-card h3{
+        font-size:1.5rem;
+    }
+
+}
+
+/* ==========================================
+   CEREMONIA — TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .ceremony-section{
+        padding:95px 22px;
+    }
+
+    .ceremony-container{
+        width:min(94%,760px);
+        padding:60px 50px;
+    }
+
+    .ceremony-title{
+        font-size:3.6rem;
+    }
+
+    .ceremony-introduction{
+        font-size:1.2rem;
+    }
+
+}
+
+
+/* ==========================================
+   CEREMONIA — CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .ceremony-section{
+        min-height:auto;
+        padding:78px 18px;
+    }
+
+    .ceremony-container{
+        width:100%;
+        padding:52px 25px;
+    }
+
+    .ceremony-container::before{
+        inset:8px;
+    }
+
+    .ceremony-icon{
+        width:68px;
+        height:68px;
+
+        font-size:1.45rem;
+    }
+
+    .ceremony-eyebrow{
+        font-size:.82rem;
+        letter-spacing:2.4px;
+    }
+
+    .ceremony-title{
+        margin-bottom:24px;
+
+        font-size:3rem;
+    }
+
+    .ceremony-introduction{
+        margin-bottom:30px;
+
+        font-size:1.08rem;
+        line-height:1.6;
+    }
+
+    .ceremony-place h3{
+        margin-bottom:25px;
+
+        font-size:1.65rem;
+    }
+
+    .ceremony-details{
+        flex-direction:column;
+        gap:14px;
+
+        margin-bottom:30px;
+    }
+
+    .ceremony-detail{
+        font-size:1.02rem;
+    }
+
+    .location-button{
+        width:min(100%,280px);
+
+        padding:15px 25px;
+
+        font-size:1.05rem;
+    }
+
+}
+
+
+/* ==========================================
+   CEREMONIA — CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:360px){
+
+    .ceremony-container{
+        padding:46px 20px;
+    }
+
+    .ceremony-title{
+        font-size:2.7rem;
+    }
+
+    .ceremony-place h3{
+        font-size:1.5rem;
+    }
+
+}
+
+/* ==========================================
+   RECEPCIÓN — TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .reception-section{
+        padding:95px 22px;
+    }
+
+    .reception-container{
+        width:min(94%,760px);
+        padding:60px 50px;
+    }
+
+    .reception-title{
+        font-size:3.6rem;
+    }
+
+    .reception-introduction{
+        font-size:1.2rem;
+    }
+
+}
+
+
+/* ==========================================
+   RECEPCIÓN — CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .reception-section{
+        padding:30px 18px 78px;
+    }
+
+    .reception-container{
+        width:100%;
+        padding:52px 25px;
+    }
+
+    .reception-container::before{
+        inset:8px;
+    }
+
+    .reception-icon{
+        width:68px;
+        height:68px;
+        font-size:1.45rem;
+    }
+
+    .reception-eyebrow{
+        font-size:.82rem;
+        letter-spacing:2.4px;
+    }
+
+    .reception-title{
+        margin-bottom:24px;
+        font-size:3rem;
+    }
+
+    .reception-introduction{
+        margin-bottom:30px;
+        font-size:1.08rem;
+        line-height:1.6;
+    }
+
+    .reception-place h3{
+        margin-bottom:25px;
+        font-size:1.65rem;
+    }
+
+    .reception-details{
+        flex-direction:column;
+        gap:14px;
+        margin-bottom:30px;
+    }
+
+    .reception-detail{
+        font-size:1.02rem;
+    }
+
+}
+
+
+/* ==========================================
+   RECEPCIÓN — CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:360px){
+
+    .reception-container{
+        padding:46px 20px;
+    }
+
+    .reception-title{
+        font-size:2.7rem;
+    }
+
+    .reception-place h3{
+        font-size:1.5rem;
+    }
+
+}
+
+/* ==========================================
+   CÓDIGO DE VESTIMENTA — TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .dress-code-section{
+        padding:35px 22px 75px;
+    }
+
+    .dress-code-container{
+        width:min(94%,700px);
+        padding:55px 48px;
+    }
+
+    .dress-code-title{
+        font-size:3.4rem;
+    }
+
+}
+
+
+/* ==========================================
+   CÓDIGO DE VESTIMENTA — CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .dress-code-section{
+        padding:30px 18px 65px;
+    }
+
+    .dress-code-container{
+        width:100%;
+        padding:48px 24px;
+    }
+
+    .dress-code-container::before{
+        inset:8px;
+    }
+
+    .dress-code-icon{
+        width:66px;
+        height:66px;
+
+        font-size:1.4rem;
+    }
+
+    .dress-code-eyebrow{
+        font-size:.8rem;
+        letter-spacing:2.2px;
+    }
+
+    .dress-code-title{
+        font-size:2.9rem;
+    }
+
+    /*.dress-code-style{
+        font-size:1.2rem;
+        letter-spacing:2px;
+    }*/
+
+    .dress-code-options{
+    gap:38px;
+    margin:25px auto 24px;
+    }
+
+    .dress-code-option i{
+    font-size:3.1rem;
+    }
+
+    .dress-code-option span{
+    font-size:.9rem;
+    letter-spacing:1.5px;
+    }
+
+    .dress-code-divider span{
+        width:45px;
+    }
+
+    .dress-code-message{
+        font-size:1.05rem;
+    }
+
+}
+
+
+/* ==========================================
+   CÓDIGO DE VESTIMENTA — CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:360px){
+
+    .dress-code-container{
+        padding:43px 20px;
+    }
+
+    .dress-code-title{
+        font-size:2.6rem;
+    }
+
+    .dress-code-message{
+        font-size:1rem;
+    }
+
+    .dress-code-options{
+    gap:28px;
+    }
+
+    .dress-code-option i{
+    font-size:2.7rem;
+    }
+
+}
+
+/* ==========================================
+   REGALOS — TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .gifts-section{
+        padding:35px 22px 80px;
+    }
+
+    .gifts-container{
+        width:min(94%,820px);
+        padding:58px 48px;
+    }
+
+    .gifts-title{
+        font-size:3.5rem;
+    }
+
+}
+
+
+/* ==========================================
+   REGALOS — CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .gifts-section{
+        padding:30px 18px 70px;
+    }
+
+    .gifts-container{
+        width:100%;
+        padding:50px 24px;
+    }
+
+    .gifts-container::before{
+        inset:8px;
+    }
+
+    .gifts-icon{
+        width:66px;
+        height:66px;
+
+        font-size:1.4rem;
+    }
+
+    .gifts-eyebrow{
+        font-size:.8rem;
+        letter-spacing:2.2px;
+    }
+
+    .gifts-title{
+        font-size:2.9rem;
+    }
+
+    .gifts-introduction{
+        font-size:1.7rem;
+    }
+
+    .gifts-message{
+        margin-bottom:32px;
+
+        font-size:1.05rem;
+    }
+
+    .gifts-options{
+        grid-template-columns:1fr;
+        gap:22px;
+    }
+
+    .gift-card{
+        padding:30px 23px;
+    }
+
+    .bank-details p{
+        flex-direction:column;
+        gap:4px;
+
+        text-align:left;
+    }
+
+    .bank-details strong{
+        text-align:left;
+        overflow-wrap:anywhere;
+    }
+
+    .golden-gifts{
+    min-height:180px;
+    margin-top:26px;
+    gap:12px;
+}
+
+.golden-gift-small{
+    font-size:4rem;
+}
+
+.golden-gift-main{
+    font-size:7rem;
+}
+
+.golden-gift-medium{
+    font-size:5rem;
+}
+
+}
+
+
+/* ==========================================
+   REGALOS — CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:360px){
+
+    .gifts-container{
+        padding:44px 20px;
+    }
+
+    .gifts-title{
+        font-size:2.6rem;
+    }
+
+    .gift-card h3{
+        font-size:1.45rem;
+    }
+
+    .golden-gifts{
+    min-height:155px;
+    gap:8px;
+}
+
+.golden-gift-small{
+    font-size:3.3rem;
+}
+
+.golden-gift-main{
+    font-size:5.8rem;
+}
+
+.golden-gift-medium{
+    font-size:4.1rem;
+}
+
+}
+
+/* ==========================================
+   CONFIRMACIÓN — TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .confirmation-section{
+        padding:35px 22px 85px;
+    }
+
+    .confirmation-container{
+        width:min(94%,760px);
+        padding:58px 50px;
+    }
+
+    .confirmation-title{
+        font-size:3.5rem;
+    }
+}
+
+/* ==========================================
+   CONFIRMACIÓN — CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .whatsapp-confirmation-link{
+        min-height:52px;
+        font-size:1.05rem;
+    }
+
+    .confirmation-section{
+        padding:30px 18px 75px;
+    }
+
+    .confirmation-container{
+        width:100%;
+        padding:50px 24px;
+    }
+
+    .confirmation-container::before{
+        inset:8px;
+    }
+
+    .confirmation-icon{
+        width:66px;
+        height:66px;
+        font-size:1.4rem;
+    }
+
+    .confirmation-eyebrow{
+        font-size:.8rem;
+        letter-spacing:2.2px;
+    }
+
+    .confirmation-title{
+        font-size:2.9rem;
+    }
+
+    .confirmation-introduction{
+        font-size:1.05rem;
+    }
+
+    .invitation-allocation{
+        padding:20px 18px;
+    }
+
+    .attendance-options{
+        grid-template-columns:1fr;
+        gap:12px;
+    }
+}
+
+/* ==========================================
+   CONFIRMACIÓN — CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:360px){
+
+    .confirmation-container{
+        padding:44px 20px;
+    }
+
+    .confirmation-title{
+        font-size:2.6rem;
+    }
+}
+
+/* ==========================================
+   MENSAJE FINAL — TABLET
+========================================== */
+
+@media (max-width:900px){
+
+    .final-message-section{
+        min-height:620px;
+        padding:95px 22px;
+    }
+
+    .final-message-container{
+        width:min(94%,760px);
+        padding:60px 50px;
+    }
+
+    .final-message-title{
+        font-size:3.6rem;
+    }
+
+    .final-message-text{
+        font-size:1.2rem;
+    }
+}
+
+/* ==========================================
+   MENSAJE FINAL — CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .final-message-section{
+        min-height:auto;
+        padding:78px 18px;
+
+        background-position:32% center;
+    }
+
+    .final-message-overlay{
+        background:
+            linear-gradient(
+                rgba(252,250,247,.72),
+                rgba(252,250,247,.84)
+            );
+    }
+
+    .final-message-section::before{
+        inset:9px;
+    }
+
+    .final-message-section::after{
+        inset:15px;
+    }
+
+    .final-message-container{
+        width:100%;
+        padding:52px 24px;
+    }
+
+    .final-message-container::before{
+        inset:8px;
+    }
+
+    .final-monogram{
+        width:68px;
+        height:68px;
+
+        font-size:1.4rem;
+    }
+
+    .final-message-eyebrow{
+        font-size:.8rem;
+        letter-spacing:2.3px;
+    }
+
+    .final-message-title{
+        font-size:3rem;
+    }
+
+    .final-message-text{
+        font-size:1.08rem;
+        line-height:1.65;
+    }
+
+    .final-message-signature{
+        font-size:1.75rem;
+    }
+
+    .final-couple-names{
+        font-size:2.5rem;
+    }
+
+    .final-couple-names span{
+        font-size:1.35rem;
+    }
+
+    .final-divider span{
+        width:42px;
+    }
+
+    .back-to-top{
+        width:min(100%,250px);
+    }
+}
+
+/* ==========================================
+   MENSAJE FINAL — CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width:360px){
+
+    .final-message-container{
+        padding:46px 20px;
+    }
+
+    .final-message-title{
+        font-size:2.65rem;
+    }
+
+    .final-couple-names{
+        font-size:2.2rem;
+    }
+}
+
+/* ==========================================
+   PANTALLA DE APERTURA — TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+    .invitation-intro {
+        padding: 26px 22px;
+    }
+
+    .intro-content {
+        width: min(100%, 620px);
+    }
+
+    .intro-eyebrow {
+        margin-bottom: 27px;
+    }
+
+    .intro-eyebrow span {
+        font-size: .84rem;
+        letter-spacing: 4px;
+    }
+
+    .intro-eyebrow strong {
+        font-size: 3.1rem;
+    }
+
+    .envelope {
+        width: 330px;
+        height: 225px;
+        margin-bottom: 29px;
+    }
+
+    .envelope-letter {
+        right: 23px;
+        bottom: 18px;
+        left: 23px;
+
+        height: 182px;
+    }
+
+    .envelope-flap {
+        height: 132px;
+    }
+
+    .envelope-seal {
+        top: 87px;
+
+        width: 58px;
+        height: 58px;
+
+        font-size: .94rem;
+    }
+
+    .envelope-open-label {
+        margin-top: -17px;
+        margin-bottom: 26px;
+
+        font-size: .77rem;
+        letter-spacing: 2.1px;
+    }
+
+    .intro-title {
+        font-size: 3.2rem;
+    }
+
+    .intro-text {
+        max-width: 530px;
+
+        font-size: 1.12rem;
+    }
+
+    .invitation-intro.is-opening
+    .envelope-letter {
+        transform: translateY(-72px);
+    }
+}
+
+
+/* ==========================================
+   PANTALLA DE APERTURA — CELULAR
+========================================== */
+
+@media (max-width: 600px) {
+
+    .invitation-intro {
+        padding: 24px 18px;
+    }
+
+    .invitation-intro::after {
+        inset: 9px;
+    }
+
+    .intro-content {
+        width: 100%;
+    }
+
+    /* Leyenda superior */
+
+    .intro-eyebrow {
+        margin-bottom: 24px;
+    }
+
+    .intro-eyebrow span {
+        font-size: .72rem;
+        letter-spacing: 3.2px;
+    }
+
+    .intro-eyebrow strong {
+        font-size: 2.8rem;
+    }
+
+    .intro-eyebrow strong::after {
+        right: 5%;
+        bottom: -8px;
+        left: 5%;
+    }
+
+    /* Sobre */
+
+    .envelope {
+        width: min(100%, 290px);
+        height: 198px;
+        margin-bottom: 27px;
+    }
+
+    .envelope-back {
+        border-radius: 4px;
+    }
+
+    .envelope-letter {
+        right: 20px;
+        bottom: 15px;
+        left: 20px;
+
+        height: 165px;
+    }
+
+    .envelope-flap {
+        height: 116px;
+    }
+
+    /* Sello pequeño */
+
+    .envelope-seal {
+        top: 76px;
+
+        width: 54px;
+        height: 54px;
+
+        font-size: .86rem;
+    }
+
+    .envelope-seal span:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .letter-monogram {
+        font-size: 1.6rem;
+    }
+
+    .envelope-letter p {
+        margin-top: 6px;
+
+        font-size: 1.5rem;
+    }
+
+    .envelope-open-label {
+    position: relative;
+    z-index: 10;
+
+    margin: 10px auto 24px;
+
+    color: var(--coffee);
+
+    font-size: .68rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    /* Textos */
+
+    .intro-title {
+        max-width: 360px;
+        margin-bottom: 13px;
+
+        font-size: 2.65rem;
+        line-height: 1.08;
+    }
+
+    .intro-text {
+        max-width: 340px;
+
+        font-size: 1.03rem;
+        line-height: 1.55;
+    }
+
+    /* Animación */
+
+    .invitation-intro.is-opening
+    .envelope-letter {
+        transform: translateY(-62px);
+    }
+
+    .music-control {
+    right: 15px;
+    bottom: 15px;
+
+    width: 46px;
+    height: 46px;
+
+    font-size: .95rem;
+    }
+}
+
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+========================================== */
+
+@media (max-width: 390px) {
+
+    .invitation-intro {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .intro-eyebrow {
+        margin-bottom: 21px;
+    }
+
+    .intro-eyebrow span {
+        font-size: .68rem;
+        letter-spacing: 2.7px;
+    }
+
+    .intro-eyebrow strong {
+        font-size: 2.55rem;
+    }
+
+    .envelope {
+        width: min(100%, 270px);
+        height: 184px;
+        margin-bottom: 25px;
+    }
+
+    .envelope-letter {
+        right: 18px;
+        bottom: 14px;
+        left: 18px;
+
+        height: 150px;
+    }
+
+    .envelope-flap {
+        height: 108px;
+    }
+
+    .envelope-seal {
+        top: 70px;
+
+        width: 50px;
+        height: 50px;
+
+        font-size: .8rem;
+    }
+
+    .letter-monogram {
+        font-size: 1.45rem;
+    }
+
+    .envelope-letter p {
+        font-size: 1.38rem;
+    }
+
+    .envelope-open-label {
+    margin: 9px auto 21px;
+
+    font-size: .62rem;
+    line-height: 1.4;
+    letter-spacing: 1.25px;
+}
+
+    .intro-title {
+        font-size: 2.4rem;
+    }
+
+    .intro-text {
+        max-width: 310px;
+
+        font-size: .97rem;
+    }
+}
+
+
+/* ==========================================
+   CELULARES CON POCA ALTURA
+========================================== */
+
+@media (max-height: 760px) and (max-width: 600px) {
+
+    .invitation-intro {
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+
+    .intro-eyebrow {
+        margin-bottom: 13px;
+    }
+
+    .intro-eyebrow span {
+        font-size: .65rem;
+    }
+
+    .intro-eyebrow strong {
+        font-size: 2.25rem;
+    }
+
+    .envelope {
+        width: 245px;
+        height: 168px;
+        margin-bottom: 17px;
+    }
+
+    .envelope-letter {
+        right: 17px;
+        bottom: 12px;
+        left: 17px;
+
+        height: 138px;
+    }
+
+    .envelope-flap {
+        height: 99px;
+    }
+
+    .envelope-seal {
+        top: 64px;
+
+        width: 46px;
+        height: 46px;
+
+        font-size: .72rem;
+    }
+
+    .envelope-seal span:nth-child(2) {
+        font-size: .85rem;
+    }
+
+    .letter-monogram {
+        font-size: 1.3rem;
+    }
+
+    .envelope-letter p {
+        font-size: 1.2rem;
+    }
+
+    .envelope-open-label {
+    margin: 7px auto 12px;
+
+    font-size: .57rem;
+    line-height: 1.35;
+    letter-spacing: 1px;
+}
+
+    .intro-title {
+        margin-bottom: 7px;
+
+        font-size: 2.1rem;
+    }
+
+    .intro-text {
+        max-width: 320px;
+
+        font-size: .89rem;
+        line-height: 1.4;
+    }
+
+    .invitation-intro.is-opening
+    .envelope-letter {
+        transform: translateY(-48px);
+    }
+}
+
+
+/* ==========================================
+   CELULARES MUY ANGOSTOS
+========================================== */
+
+@media (max-width: 340px) {
+
+    .envelope {
+        width: 230px;
+        height: 157px;
+    }
+
+    .envelope-letter {
+        height: 128px;
+    }
+
+    .envelope-flap {
+        height: 92px;
+    }
+
+    .envelope-seal {
+        top: 59px;
+
+        width: 44px;
+        height: 44px;
+
+        font-size: .68rem;
+    }
+
+    .envelope-open-label {
+        font-size: .55rem;
+    }
+
+    .intro-title {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: .88rem;
+    }
+}
+
+
+/* ==========================================
+   ACCESIBILIDAD — REDUCIR MOVIMIENTO
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .envelope,
+    .intro-eyebrow,
+    .intro-title,
+    .intro-text,
+    .envelope-open-label,
+    .envelope-seal {
+        animation: none;
+    }
+
+    .envelope-flap,
+    .envelope-letter,
+    .envelope-seal,
+    .invitation-intro {
+        transition-duration: .01ms;
+    }
+}
+
+/* ==========================================
+   ANIMACIONES AL DESPLAZARSE EN CELULAR
+========================================== */
+
+@media (max-width: 600px) {
+
+    .reveal {
+        transform: translateY(26px);
+
+        transition:
+            opacity .75s ease,
+            transform .75s ease;
+    }
+
+    .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   ANIMACIONES RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .reveal {
+        transform:
+            translateY(24px);
+
+        transition-duration:
+            .72s;
+    }
+
+    .reveal.is-visible {
+        transform:
+            translateY(0);
+    }
+
+    .reveal-left,
+    .reveal-right {
+        transform:
+            translateY(24px);
+
+        transition-duration:
+            .72s;
+    }
+
+    .reveal-left.is-visible,
+    .reveal-right.is-visible {
+        transform:
+            translateY(0);
+    }
+
+    .reveal-scale {
+        transform:
+            scale(.97);
+
+        transition-duration:
+            .7s;
+    }
+
+    .reveal-scale.is-visible {
+        transform:
+            scale(1);
+    }
+
+    .timeline-item.is-active
+    .timeline-marker {
+        transform:
+            scale(1.08);
+
+        box-shadow:
+            0 8px 22px
+            rgba(182, 138, 45, .25),
+
+            0 0 0 7px
+            rgba(212, 175, 55, .10);
+    }
+
+    .timeline-item.is-active
+    .timeline-card {
+        transform:
+            translateY(-2px);
+
+        box-shadow:
+            0 14px 30px
+            rgba(111, 78, 55, .11);
+    }
+}
+
+@media (max-width:600px){
+
+    .timeline-photo.timeline-photo-large img{
+        height:auto !important;
+        max-height:none !important;
+        object-fit:contain !important;
+    }
+}
+
+/* ==========================================
+   AJUSTE DE LEYENDA DE APERTURA EN CELULAR
+========================================== */
+
+@media (max-width:600px){
+
+    .envelope{
+        margin-bottom:28px !important;
+    }
+
+    .envelope-open-label{
+        position:relative;
+        z-index:10;
+
+        width:100%;
+        margin:0 auto 24px !important;
+
+        line-height:1.4;
+        text-align:center;
+    }
+}
