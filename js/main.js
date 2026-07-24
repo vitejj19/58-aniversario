@@ -773,8 +773,8 @@ function renderInvitationData() {
 
         reservedPlacesLabel.textContent =
             reservedPlaces === 1
-                ? "lugar"
-                : "lugares";
+                ? "lugar para su familia"
+                : "lugares para su familia";
     }
 
     if (invitationCodeInput) {
