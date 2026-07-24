@@ -256,6 +256,35 @@ if (
 const API_URL =
     "https://script.google.com/macros/s/AKfycbz05vRoMf_gdozG1xNzrq8O1B_SFdBv0SavKbINkefzaoid2Ido1UbILU-f3b_YhoFUqA/exec";
 
+/* ==========================================
+   FECHA LÍMITE DE CONFIRMACIÓN
+========================================== */
+
+/*
+ * Se permiten confirmaciones durante todo el
+ * 15 de agosto de 2026.
+ *
+ * El bloqueo comienza el 16 de agosto de 2026
+ * a las 00:00 horas, tiempo del centro de México.
+ */
+
+const CONFIRMATION_DEADLINE =
+    new Date(
+        "2026-08-16T00:00:00-06:00"
+    );
+
+const CONFIRMATION_DEADLINE_MESSAGE =
+    "El periodo de confirmación finalizó " +
+    "el 15 de agosto de 2026.";
+
+
+function isConfirmationDeadlineExpired() {
+
+    return (
+        new Date().getTime() >=
+        CONFIRMATION_DEADLINE.getTime()
+    );
+}
 
 /* ==========================================
    COPIAR CLABE BANCARIA
@@ -855,16 +884,17 @@ function renderInvitationData() {
     }
 
     if (
-        currentSettings.deadlineExpired
-    ) {
+    currentSettings.deadlineExpired ||
+    isConfirmationDeadlineExpired()
+) {
 
-        setConfirmationStatus(
-            "La fecha límite de confirmación ha finalizado.",
-            "error"
-        );
+    setConfirmationStatus(
+        CONFIRMATION_DEADLINE_MESSAGE,
+        "error"
+    );
 
-        disableConfirmationForm();
-    }
+    disableConfirmationForm();
+}
 }
 
 
@@ -1022,6 +1052,20 @@ if (confirmationForm) {
                     "No fue posible identificar esta invitación.",
                     "error"
                 );
+
+                return;
+            }
+
+            if (
+                isConfirmationDeadlineExpired()
+            ) {
+
+                setConfirmationStatus(
+                    CONFIRMATION_DEADLINE_MESSAGE,
+                    "error"
+                );
+
+                disableConfirmationForm();
 
                 return;
             }

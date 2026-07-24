@@ -3760,3 +3760,22 @@ body.intro-active {
     object-fit:contain !important;
     object-position:center;
 }
+
+/* Fecha límite de confirmación */
+.confirmation-deadline {
+    max-width: 650px;
+    margin: 12px auto 28px;
+    padding: 12px 20px;
+    color: #6f4e37;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: center;
+    background: rgba(182, 138, 45, 0.08);
+    border: 1px solid rgba(182, 138, 45, 0.35);
+    border-radius: 10px;
+}
+
+.confirmation-deadline strong {
+    color: #b68a2d;
+    font-weight: 600;
+}
