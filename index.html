@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>58 Años de Amor | Juana Gómez & Francisco Rojas</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <audio
+        id="background-music"
+        preload="auto"
+        loop
+    >
+    <source
+        src="assets/musica/como-han-pasado-los-anos.mp3"
+        type="audio/mpeg"
+    >
+            Tu navegador no soporta reproducción de audio.
+    </audio>
+
+    <button
+        id="music-control"
+        class="music-control"
+        type="button"
+        aria-label="Pausar música"
+        hidden
+    >
+        <i class="fa-solid fa-volume-high"></i>
+    </button>
+
+<!-- ==========================================
+     PANTALLA DE APERTURA
+=========================================== -->
+
+<div
+    id="invitation-intro"
+    class="invitation-intro"
+    role="dialog"
+    aria-labelledby="intro-title"
+    aria-modal="true"
+>
+    <div
+        class="intro-background"
+        aria-hidden="true"
+    ></div>
+
+    <div class="intro-content">
+
+        <!-- Leyenda destacada -->
+
+        <p class="intro-eyebrow">
+            <span>Una invitación</span>
+            <strong>Especial</strong>
+        </p>
+
+        <!-- Sobre -->
+
+        <div class="envelope">
+
+            <div class="envelope-back"></div>
+
+            <!-- Carta interior -->
+
+            <div class="envelope-letter">
+
+                <div class="letter-monogram">
+                    J <span>&</span> F
+                </div>
+
+                <p>
+                    58 años de amor
+                </p>
+
+            </div>
+
+            <!-- Partes frontales del sobre -->
+
+            <div class="envelope-left"></div>
+
+            <div class="envelope-right"></div>
+
+            <div class="envelope-bottom"></div>
+
+            <!-- Solapa superior -->
+
+            <div class="envelope-flap"></div>
+
+            <!-- Sello que abre la invitación -->
+
+            <button
+                id="open-invitation-button"
+                class="envelope-seal"
+                type="button"
+                aria-label="Abrir invitación"
+            >
+                <span>J</span>
+                <span>&</span>
+                <span>F</span>
+            </button>
+
+        </div>
+
+        <!-- Instrucción -->
+
+        <p class="envelope-open-label">
+            Toca el sello del sobre para abrir
+        </p>
+
+        <!-- Texto principal -->
+
+        <h1
+            id="intro-title"
+            class="intro-title"
+        >
+            Tenemos una invitación especial para ti y tu familia
+        </h1>
+
+        <p class="intro-text">
+            Juana Gómez y Francisco Rojas desean compartir
+            con ustedes la celebración de sus 58 años de matrimonio.
+        </p>
+
+    </div>
+
+</div>
+
+<header id="hero">
+
+    <div class="hero-background" aria-hidden="true"></div>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="monogram" aria-label="Iniciales de Juana y Francisco">
+            <span class="monogram-letter">J</span>
+            <span class="monogram-ampersand">&</span>
+            <span class="monogram-letter">F</span>
+        </div>
+
+        <p class="hero-years">
+
+            58 Años de Amor
+
+        </p>
+
+        <h1>
+
+            Juana Gómez
+
+            <span>&</span>
+
+            Francisco Rojas
+
+        </h1>
+
+        <p class="hero-text">
+
+            Con la bendición de Dios y el amor de nuestra familia,
+
+            queremos invitarlos a celebrar nuestro aniversario de bodas.
+
+        </p>
+
+        <div class="hero-actions">
+
+    <div class="hero-date">
+        <i class="fa-solid fa-calendar-days"></i>
+        <span>Viernes 11 de septiembre de 2026</span>
+    </div>
+
+    <a href="#confirmacion" class="btn-primary">
+        Confirmar asistencia
+    </a>
+
+    </div>
+
+    <div class="scroll-down">
+
+        <span>Desliza</span>
+
+        <i class="fa-solid fa-chevron-down"></i>
+
+    </div>
+
+</header>
+
+<main>
+
+<!-- ==========================================
+     CUENTA REGRESIVA
+=========================================== -->
+
+<section id="cuenta-regresiva" class="countdown-section">
+
+    <div class="countdown-overlay"></div>
+
+    <div class="countdown-container">
+
+        <header class="countdown-header">
+
+            <h2>Faltan...</h2>
+
+            <p>para celebrar 58 años de amor</p>
+
+        </header>
+
+        <div
+            class="countdown-grid"
+            aria-label="Cuenta regresiva para el aniversario"
+        >
+
+            <div class="countdown-item">
+                <span id="days" class="countdown-number">00</span>
+                <span class="countdown-label">Días</span>
+            </div>
+
+            <div class="countdown-item">
+                <span id="hours" class="countdown-number">00</span>
+                <span class="countdown-label">Horas</span>
+            </div>
+
+            <div class="countdown-item">
+                <span id="minutes" class="countdown-number">00</span>
+                <span class="countdown-label">Minutos</span>
+            </div>
+
+            <div class="countdown-item">
+                <span id="seconds" class="countdown-number">00</span>
+                <span class="countdown-label">Segundos</span>
+            </div>
+
+        </div>
+
+        <p id="countdown-message" class="countdown-quote">
+            “El verdadero amor se mide por toda una vida compartida.”
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     MENSAJE PRINCIPAL
+=========================================== -->
+
+<section id="mensaje" class="message-section">
+
+    <div class="message-decoration message-decoration-left" aria-hidden="true"></div>
+    <div class="message-decoration message-decoration-right" aria-hidden="true"></div>
+
+    <div class="message-container reveal">
+
+        <div class="section-ornament" aria-hidden="true">
+            <span></span>
+            <i class="fa-regular fa-heart"></i>
+            <span></span>
+        </div>
+
+        <p class="message-eyebrow">
+            58 años caminando juntos
+        </p>
+
+        <h2 class="message-title">
+            Una historia de amor
+        </h2>
+
+        <div class="message-content">
+
+            <p>
+                Hace 58 años comenzamos un camino juntos…
+                lleno de amor, retos, aprendizajes
+                y momentos inolvidables.
+            </p>
+
+            <p>
+                Hoy queremos celebrar esta hermosa historia
+                rodeados de las personas que han sido parte
+                de nuestra vida.
+            </p>
+
+            <p class="message-thanks">
+                Gracias por acompañarnos.
+            </p>
+
+        </div>
+
+        <div class="message-signature" aria-hidden="true">
+            J <span>&</span> F
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     NUESTRA HISTORIA
+=========================================== -->
+
+<section id="nuestra-historia" class="history-section">
+
+    <div class="history-container reveal">
+
+        <div class="section-ornament" aria-hidden="true">
+            <span></span>
+            <i class="fa-regular fa-heart"></i>
+            <span></span>
+        </div>
+
+        <p class="history-eyebrow">
+            58 años de recuerdos
+        </p>
+
+        <h2 class="history-title">
+            Nuestra historia
+        </h2>
+
+        <p class="history-introduction">
+            Una vida compartida está formada por pequeños momentos,
+            grandes aprendizajes y recuerdos que permanecen para siempre.
+        </p>
+
+        <div class="timeline">
+
+            <!-- 1968 -->
+
+            <article class="timeline-item timeline-item-left reveal">
+
+                <div class="timeline-marker">
+                    <i class="fa-solid fa-ring"></i>
+                </div>
+
+                <div class="timeline-card">
+
+                    <span class="timeline-year">1968</span>
+
+                    <h3>
+                        Comenzó nuestro camino
+                    </h3>
+
+                    <p>
+                        Dos vidas se unieron para iniciar una historia
+                        construida con amor, compromiso y fe.
+                    </p>
+
+                  <button
+                        type="button"
+                        class="timeline-photo"
+                        aria-label="Ver fotografía de 1968 en grande"
+                    >
+                        <img
+                            src="images/historia/Foto-1968.jpg"
+                            alt="Fotografía de la boda de Juana Gómez y Francisco Rojas en 1968"
+                            loading="lazy"
+                >   
+                </button>
+
+                </div>
+
+            </article>
+
+            <!-- VIDA COMPARTIDA -->
+
+            <article class="timeline-item timeline-item-right reveal">
+
+                <div class="timeline-marker">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+
+                <div class="timeline-card">
+
+                    <span class="timeline-year">
+                        Una vida compartida
+                    </span>
+
+                    <h3>
+                        Familia, aprendizajes y recuerdos
+                    </h3>
+
+                    <p>
+                        A lo largo de los años construimos un hogar,
+                        formamos una familia y vivimos momentos
+                        que hoy forman parte de nuestra historia.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="timeline-photo timeline-photo-large"
+                        aria-label="Ver fotografía familiar en grande"
+                            >
+                        <img
+                            src="images/historia/Foto-historia.jpg"
+                            alt="Fotografía familiar de Juana Gómez y Francisco Rojas"
+                            loading="lazy"
+                             >
+                    </button>
+
+                </div>
+
+            </article>
+
+            <!-- 2026 -->
+
+            <article class="timeline-item timeline-item-left reveal">
+
+                <div class="timeline-marker">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="timeline-card">
+
+                    <span class="timeline-year">2026</span>
+
+                    <h3>
+                        Celebramos 58 años de amor
+                    </h3>
+
+                    <p>
+                        Hoy agradecemos cada etapa recorrida y celebramos
+                        esta historia rodeados de las personas
+                        que han sido parte de nuestra vida.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="timeline-photo"
+                        aria-label="Ver fotografía actual en grande"
+                    >
+                        <img
+                            src="images/historia/Foto-actual.jpg"
+                            alt="Fotografía actual de Juana Gómez y Francisco Rojas en 2026"
+                            loading="lazy"
+                        >
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <p class="history-closing">
+            Y nuestra historia continúa…
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     CEREMONIA RELIGIOSA
+=========================================== -->
+
+<section id="ceremonia" class="ceremony-section">
+
+    <div class="ceremony-container reveal">
+
+        <div class="ceremony-icon" aria-hidden="true">
+            <i class="fa-solid fa-church"></i>
+        </div>
+
+        <p class="ceremony-eyebrow">
+            Con la bendición de Dios
+        </p>
+
+        <h2 class="ceremony-title">
+            Ceremonia Religiosa
+        </h2>
+
+        <p class="ceremony-introduction">
+            Agradeceremos su compañía en la ceremonia religiosa
+            que se llevará a cabo en:
+        </p>
+
+        <div class="ceremony-place">
+
+            <h3>
+                Parroquia de la Santa Cruz de Tecámac
+            </h3>
+
+            <div class="ceremony-details">
+
+                <div class="ceremony-detail">
+                    <i class="fa-regular fa-calendar"></i>
+
+                    <span>
+                        Viernes 11 de septiembre de 2026
+                    </span>
+                </div>
+
+                <div class="ceremony-detail">
+                    <i class="fa-regular fa-clock"></i>
+
+                    <span>
+                        03:30 p. m.
+                    </span>
+                </div>
+
+            </div>
+
+            <a
+                href="https://www.google.com/maps/place/Parroquia+de+la+Santa+Cruz+de+Tecamac/@19.7111341,-98.9701002,17z/data=!4m14!1m7!3m6!1s0x85d1ecd80ad3c1b5:0xb48e6a5f33b2e2ba!2sParroquia+de+la+Santa+Cruz+de+Tecamac!8m2!3d19.7111291!4d-98.9675253!16s%2Fg%2F1vh_8qpq!3m5!1s0x85d1ecd80ad3c1b5:0xb48e6a5f33b2e2ba!8m2!3d19.7111291!4d-98.9675253!16s%2Fg%2F1vh_8qpq?entry=ttu"
+                class="location-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Ver ubicación
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     RECEPCIÓN
+=========================================== -->
+
+<section id="recepcion" class="reception-section">
+
+    <div class="reception-container reveal">
+
+        <div class="reception-icon" aria-hidden="true">
+            <i class="fa-solid fa-champagne-glasses"></i>
+        </div>
+
+        <p class="reception-eyebrow">
+            Celebremos juntos
+        </p>
+
+        <h2 class="reception-title">
+            Recepción
+        </h2>
+
+        <p class="reception-introduction">
+            Después de la ceremonia religiosa, nos encantará compartir con ustedes en:
+        </p>
+
+        <div class="reception-place">
+
+            <h3>
+                Salón KATSA
+            </h3>
+
+            <div class="reception-details">
+
+                <div class="reception-detail">
+                    <i class="fa-regular fa-clock"></i>
+
+                    <span>
+                        05:00 p. m.
+                    </span>
+                </div>
+
+            </div>
+
+            <a
+                href="https://www.google.com/maps/place/KATSA/@19.7085977,-98.9692552,17z/data=!4m14!1m7!3m6!1s0x85d1ecd8e9b2fd9f:0x3af3e237e896593a!2sKATSA!8m2!3d19.7085927!4d-98.9666803!16s%2Fg%2F11c0plv69_!3m5!1s0x85d1ecd8e9b2fd9f:0x3af3e237e896593a!8m2!3d19.7085927!4d-98.9666803!16s%2Fg%2F11c0plv69_?entry=ttu"
+                class="location-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fa-solid fa-location-dot"></i>
+                Cómo llegar
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     CÓDIGO DE VESTIMENTA
+=========================================== -->
+
+<section id="vestimenta" class="dress-code-section">
+
+    <div class="dress-code-container reveal">
+
+        <div class="dress-code-icon" aria-hidden="true">
+            <i class="fa-solid fa-user-tie"></i>
+        </div>
+
+        <p class="dress-code-eyebrow">
+            Para esta ocasión especial
+        </p>
+
+        <h2 class="dress-code-title">
+            Código de vestimenta
+        </h2>
+
+        <!--<p class="dress-code-style">/
+            Formal / Elegante
+        </p> -->
+
+        <div
+            class="dress-code-options"
+            aria-label="Vestimenta formal para mujer y hombre"
+        >
+        <div class="dress-code-option">
+            <i class="fa-solid fa-person-dress"></i>
+            <span>Vestido</span>
+        </div>
+
+        <div class="dress-code-option">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>Traje</span>
+    </div>
+</div>
+
+        <div class="dress-code-divider" aria-hidden="true">
+            <span></span>
+            <i class="fa-regular fa-gem"></i>
+            <span></span>
+        </div>
+
+        <p class="dress-code-message">
+            Agradecemos acompañarnos con una vestimenta acorde
+            a esta celebración tan especial (Opcional).
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     REGALOS
+=========================================== -->
+
+<section id="regalos" class="gifts-section">
+
+    <div class="gifts-container reveal">
+
+        <div class="gifts-icon" aria-hidden="true">
+            <i class="fa-solid fa-gift"></i>
+        </div>
+
+        <p class="gifts-eyebrow">
+            Con mucho cariño
+        </p>
+
+        <h2 class="gifts-title">
+            Regalos
+        </h2>
+
+        <p class="gifts-introduction">
+            Tu presencia es nuestro mejor regalo.
+        </p>
+
+        <p class="gifts-message">
+            Si deseas tener un detalle con nosotros,
+            será recibido con mucho cariño.
+        </p>
+
+            <div
+                class="golden-gifts"
+                aria-label="Cajas de regalos doradas"
+            >
+                <div class="golden-gift golden-gift-small">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+
+                <div class="golden-gift golden-gift-main">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+
+                <div class="golden-gift golden-gift-medium">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+                </div>
+
+                <p
+                    id="copy-message"
+                    class="copy-message"
+                    aria-live="polite"
+                ></p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     CONFIRMACIÓN DE ASISTENCIA
+=========================================== -->
+
+<section id="confirmacion" class="confirmation-section">
+
+    <div class="confirmation-container reveal">
+
+        <!-- Icono principal -->
+
+        <div class="confirmation-icon" aria-hidden="true">
+            <i class="fa-regular fa-envelope-open"></i>
+        </div>
+
+        <!-- Encabezado -->
+
+        <p class="confirmation-eyebrow">
+            Esperamos contar con su presencia
+        </p>
+
+        <h2 class="confirmation-title">
+            Confirmación de asistencia
+        </h2>
+
+        <p class="confirmation-introduction">
+            Será un honor compartir este momento tan especial en su compañía.
+        </p>
+
+        <!-- Información personalizada -->
+
+        <div class="invitation-allocation">
+
+            <p
+                id="invited-family"
+                class="invited-family"
+            >
+                Consultando invitación...
+            </p>
+
+            <p class="reserved-places">
+
+                Hemos reservado
+
+                <strong id="reserved-places-number">
+                    0
+                </strong>
+
+                <span id="reserved-places-label">
+                    lugares para su familia.
+                </span>
+
+            </p>
+
+        </div>
+
+        <!-- Formulario -->
+
+        <form
+            id="confirmation-form"
+            class="confirmation-form"
+        >
+
+            <!-- Datos internos -->
+
+            <input
+                type="hidden"
+                id="invitation-code"
+                name="invitationCode"
+            >
+
+            <input
+                type="hidden"
+                id="maximum-guests"
+                name="maximumGuests"
+            >
+
+            <!-- Nombre de quien confirma -->
+
+            <div class="form-group">
+
+                <label for="guest-name">
+                    Nombre de quien confirma
+                </label>
+
+                <input
+                    type="text"
+                    id="guest-name"
+                    name="guestName"
+                    placeholder="Escribe tu nombre completo"
+                    autocomplete="name"
+                    required
+                >
+
+            </div>
+
+            <!-- Confirmación de asistencia -->
+
+            <fieldset class="attendance-fieldset">
+
+                <legend>
+                    ¿Nos acompañarás?
+                </legend>
+
+                <div class="attendance-options">
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="attendance"
+                            value="Sí"
+                            required
+                        >
+
+                        <span>
+                            Sí, asistiremos
+                        </span>
+
+                    </label>
+
+                    <label class="radio-option">
+
+                        <input
+                            type="radio"
+                            name="attendance"
+                            value="No"
+                            required
+                        >
+
+                        <span>
+                            No podremos asistir
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <!-- Número de asistentes -->
+
+            <div
+                id="guest-count-group"
+                class="form-group"
+                hidden
+            >
+
+                <label for="guest-count">
+                    Número de personas que asistirán
+                </label>
+
+                <select
+                    id="guest-count"
+                    name="guestCount"
+                >
+
+                    <option value="">
+                        Selecciona una opción
+                    </option>
+
+                </select>
+
+                <small id="guest-count-help">
+                    Puedes confirmar únicamente los lugares reservados.
+                </small>
+
+            </div>
+
+            <!-- Mensaje opcional -->
+
+            <div class="form-group">
+
+                <label for="guest-message">
+
+                    Mensaje para los festejados
+
+                    <span>
+                        (opcional)
+                    </span>
+
+                </label>
+
+                <textarea
+                    id="guest-message"
+                    name="guestMessage"
+                    rows="4"
+                    placeholder="Escribe un mensaje para Juana y Francisco"
+                ></textarea>
+
+            </div>
+
+            <!-- Botón para guardar la confirmación -->
+
+            <button
+                type="submit"
+                class="confirmation-button"
+            >
+
+                <i class="fa-solid fa-check"></i>
+
+                Confirmar asistencia
+
+            </button>
+
+            <!-- Mensaje de estado -->
+
+            <p
+                id="confirmation-status"
+                class="confirmation-status"
+                aria-live="polite"
+            ></p>
+
+            <!-- Botón de WhatsApp:
+                 aparecerá después de guardar en Google Sheets -->
+
+            <a
+                id="whatsapp-confirmation-link"
+                class="whatsapp-confirmation-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                hidden
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                Enviar confirmación por WhatsApp
+
+            </a>
+
+        </form>
+
+        <!-- Mensaje cuando el código no es válido -->
+
+        <div
+            id="invalid-invitation"
+            class="invalid-invitation"
+            hidden
+        >
+
+            <i class="fa-solid fa-circle-exclamation"></i>
+
+            <p>
+                No pudimos identificar esta invitación.
+                Solicita nuevamente tu enlace personalizado.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     MENSAJE FINAL
+=========================================== -->
+
+<footer id="mensaje-final" class="final-message-section">
+
+    <div class="final-message-overlay"></div>
+
+    <div class="final-message-container reveal">
+
+        <div class="final-monogram" aria-hidden="true">
+            <span>J</span>
+            <span class="final-monogram-symbol">&</span>
+            <span>F</span>
+        </div>
+
+        <p class="final-message-eyebrow">
+            Gracias por acompañarnos
+        </p>
+
+        <h2 class="final-message-title">
+            Nos dará mucha alegría contar con su presencia
+        </h2>
+
+        <p class="final-message-text">
+            En este día tan significativo para nosotros,
+            queremos compartir la felicidad de celebrar
+            58 años de amor, unión y recuerdos inolvidables.
+        </p>
+
+        <p class="final-message-signature">
+            Con cariño,
+        </p>
+
+        <p class="final-couple-names">
+            Juana Gómez
+            <span>&</span>
+            Francisco Rojas
+        </p>
+
+        <div class="final-divider" aria-hidden="true">
+            <span></span>
+            <i class="fa-regular fa-heart"></i>
+            <span></span>
+        </div>
+
+        <p class="final-event-date">
+            11 de septiembre de 2026
+        </p>
+
+        <a href="#hero" class="back-to-top">
+            <i class="fa-solid fa-chevron-up"></i>
+            Volver al inicio
+        </a>
+
+    </div>
+
+</footer>
+
+<!-- Aquí construiremos el resto del sitio -->
+
+</main>
+
+<div
+    id="image-modal"
+    class="image-modal"
+    hidden
+    role="dialog"
+    aria-modal="true"
+    aria-label="Fotografía ampliada"
+>
+    <button
+        id="image-modal-close"
+        class="image-modal-close"
+        type="button"
+        aria-label="Cerrar fotografía"
+    >
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img
+        id="image-modal-photo"
+        src=""
+        alt=""
+    >
+</div>
+
+<script src="js/main.js"></script>
+
+<script src="js/effects.js"></script>
+
+<script src="js/countdown.js"></script>
+
+</body>
+
+</html>
